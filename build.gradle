@@ -10,7 +10,9 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
 }
+org.gradle.daemon=true
 
+org.gradle.parallel=true
 group 'com.test'
 version '1.0-SNAPSHOT'
 
@@ -93,6 +95,7 @@ println "hi first test"
 test {
     useTestNG {
         suites "testng.xml"
+         useDefaultListeners = true
     }
     
 }
