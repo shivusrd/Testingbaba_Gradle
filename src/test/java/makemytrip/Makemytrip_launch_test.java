@@ -15,8 +15,7 @@ public class Makemytrip_launch_test extends Baselibrary
 	Makemytrip_launch_page ob;
 	
 	@BeforeTest
-
-	public void launchFB() {
+    public void launchFB() {
 		String url = PropertyUtility.getreadproperty("makemytrip");
 		getlaunch();
 		driver.get(url);
