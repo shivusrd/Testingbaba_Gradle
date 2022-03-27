@@ -57,6 +57,8 @@ public class Testingbaba_links_page extends Baselibrary
 		assertEquals(links.isDisplayed(),true);
 		links.click();
 		Thread.sleep(1000);
+		Thread.sleep(1000);
+		
 		demopage.click();
 		Applicationutility.changewindow(0);
 		
