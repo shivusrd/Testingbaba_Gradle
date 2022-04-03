@@ -30,10 +30,11 @@ public class Testingbaba_launch_page extends Baselibrary
 	@FindBy(xpath="//*[@class=\"form-control submit\"][@value=\"Subscribe\"]")
 	private WebElement scroll;
 	
-	public void gettitle() 
+	public void gettitle() throws InterruptedException 
 	{
 		String title = driver.getTitle();
 		System.out.println(title);
+		Thread.sleep(2000);
 		//ScreenshotUtility.getscreenshot("passed", "gettitle");
 	}
 	

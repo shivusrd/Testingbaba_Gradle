@@ -6,30 +6,6 @@
     <listener class-name="listeners.Report_log"/>
     <listener class-name="extentReports.Extent_report"/>
   </listeners>
-  <test thread-count="5" name="smoke(failed)" verbose="0">
-    <classes>
-      <class name="testingbaba.Testingbaba_launch_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="LaunchTestingBaba_test01"/>
-        </methods>
-      </class> <!-- testingbaba.Testingbaba_launch_test -->
-    </classes>
-  </test> <!-- smoke(failed) -->
-  <test thread-count="5" name="checkbox(failed)" verbose="0">
-    <classes>
-      <class name="testingbaba.Testingbaba_checkbox_test">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launchtestingbaba"/>
-          <include name="CheckboxTestingBaba_test03"/>
-          <include name="CheckboxTestingBaba_test02"/>
-          <include name="CheckboxTestingBaba_test01"/>
-        </methods>
-      </class> <!-- testingbaba.Testingbaba_checkbox_test -->
-    </classes>
-  </test> <!-- checkbox(failed) -->
   <test thread-count="5" name="Makemytrip(failed)" verbose="0">
     <classes>
       <class name="makemytrip.Makemytrip_launch_test">
